@@ -1,0 +1,7 @@
+(ResultListMObjects){
+   objects[] = 
+      "ActivityRecord",
+      "LeadRecord",
+      "Opportunity",
+      "OpportunityPersonRole",
+ }

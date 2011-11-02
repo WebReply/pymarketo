@@ -1,0 +1,1464 @@
+(ResultDescribeMObject){
+   metadata = 
+      (MObjectMetadata){
+         name = "ActivityRecord"
+         description = "Composite object composed of fields from Event, Campaign, Lead, and Company"
+         isCustom = False
+         isVirtual = True
+         fieldList = 
+            (ArrayOfMObjFieldMetadata){
+               field[] = 
+                  (MObjFieldMetadata){
+                     name = "id"
+                     description = "Unique system id of Event"
+                     displayName = None
+                     sourceObject = "Event"
+                     dataType = "integer"
+                     size = 10
+                     isReadonly = True
+                     isUpdateBlocked = True
+                     isName = False
+                     isPrimaryKey = True
+                     isCustom = False
+                     isDynamic = False
+                     dynamicFieldRef = None
+                     updatedAt = 2009-12-31 19:00:00
+                  },
+                  (MObjFieldMetadata){
+                     name = "activityDateTime"
+                     description = "Event timestamp"
+                     displayName = None
+                     sourceObject = "Event"
+                     dataType = "dateTime"
+                     size = None
+                     isReadonly = True
+                     isUpdateBlocked = True
+                     isName = False
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = False
+                     dynamicFieldRef = None
+                     updatedAt = 2009-12-31 19:00:00
+                  },
+                  (MObjFieldMetadata){
+                     name = "activityType"
+                     description = "Name of Event"
+                     displayName = None
+                     sourceObject = "Event"
+                     dataType = "string"
+                     size = 255
+                     isReadonly = True
+                     isUpdateBlocked = True
+                     isName = True
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = False
+                     dynamicFieldRef = None
+                     updatedAt = 2009-12-31 19:00:00
+                  },
+                  (MObjFieldMetadata){
+                     name = "mktgAssetName"
+                     description = "Name of email, landing page, or object field"
+                     displayName = None
+                     sourceObject = "Event"
+                     dataType = "string"
+                     size = 255
+                     isReadonly = True
+                     isUpdateBlocked = True
+                     isName = False
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = False
+                     dynamicFieldRef = None
+                     updatedAt = 2009-12-31 19:00:00
+                  },
+                  (MObjFieldMetadata){
+                     name = "activityAttributes"
+                     description = "Array of name / value pairs of dynamic event attributes"
+                     displayName = None
+                     sourceObject = "Event"
+                     dataType = "Array"
+                     size = None
+                     isReadonly = True
+                     isUpdateBlocked = True
+                     isName = False
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = False
+                     dynamicFieldRef = None
+                     updatedAt = 2009-12-31 19:00:00
+                  },
+                  (MObjFieldMetadata){
+                     name = "campaign"
+                     description = "Name of Campaign that caused the Event"
+                     displayName = None
+                     sourceObject = "Campaign"
+                     dataType = "string"
+                     size = 255
+                     isReadonly = True
+                     isUpdateBlocked = True
+                     isName = False
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = False
+                     dynamicFieldRef = None
+                     updatedAt = 2009-12-31 19:00:00
+                  },
+                  (MObjFieldMetadata){
+                     name = "personName"
+                     description = "Name of Lead that owns the Event"
+                     displayName = None
+                     sourceObject = "Lead"
+                     dataType = "string"
+                     size = 255
+                     isReadonly = True
+                     isUpdateBlocked = True
+                     isName = False
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = False
+                     dynamicFieldRef = None
+                     updatedAt = 2009-12-31 19:00:00
+                  },
+                  (MObjFieldMetadata){
+                     name = "mktPersonId"
+                     description = "Unique system id of Lead"
+                     displayName = None
+                     sourceObject = "Lead"
+                     dataType = "integer"
+                     size = 10
+                     isReadonly = True
+                     isUpdateBlocked = True
+                     isName = False
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = False
+                     dynamicFieldRef = None
+                     updatedAt = 2009-12-31 19:00:00
+                  },
+                  (MObjFieldMetadata){
+                     name = "foreignSysId"
+                     description = "Unique foreign system id of Lead"
+                     displayName = None
+                     sourceObject = "Lead"
+                     dataType = "string"
+                     size = 50
+                     isReadonly = True
+                     isUpdateBlocked = True
+                     isName = False
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = False
+                     dynamicFieldRef = None
+                     updatedAt = 2009-12-31 19:00:00
+                  },
+                  (MObjFieldMetadata){
+                     name = "orgName"
+                     description = "Name of Company associated to the Lead"
+                     displayName = None
+                     sourceObject = "Company"
+                     dataType = "string"
+                     size = 255
+                     isReadonly = True
+                     isUpdateBlocked = True
+                     isName = False
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = False
+                     dynamicFieldRef = None
+                     updatedAt = 2009-12-31 19:00:00
+                  },
+                  (MObjFieldMetadata){
+                     name = "foreignSysOrgId"
+                     description = "Unique foreign system id of Company"
+                     displayName = None
+                     sourceObject = "Company"
+                     dataType = "string"
+                     size = 50
+                     isReadonly = True
+                     isUpdateBlocked = True
+                     isName = False
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = False
+                     dynamicFieldRef = None
+                     updatedAt = 2009-12-31 19:00:00
+                  },
+            }
+         updatedAt = 2009-12-31 19:00:00
+      }
+ }
+(ResultDescribeMObject){
+   metadata = 
+      (MObjectMetadata){
+         name = "LeadRecord"
+         description = "Composite object composed of fields from Lead, LeadInterest, and Company"
+         isCustom = False
+         isVirtual = True
+         fieldList = 
+            (ArrayOfMObjFieldMetadata){
+               field[] = 
+                  (MObjFieldMetadata){
+                     name = "Address"
+                     description = None
+                     displayName = "Address"
+                     sourceObject = "Lead"
+                     dataType = "text"
+                     size = 2000
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = True
+                     dynamicFieldRef = "leadAttributeList"
+                     updatedAt = 2011-07-18 18:46:01
+                  },
+                  (MObjFieldMetadata){
+                     name = "AnnualRevenue"
+                     description = None
+                     displayName = "Annual Revenue"
+                     sourceObject = "Company"
+                     dataType = "currency"
+                     size = None
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = True
+                     dynamicFieldRef = "leadAttributeList"
+                     updatedAt = 2011-07-18 18:46:01
+                  },
+                  (MObjFieldMetadata){
+                     name = "AnonymousIP"
+                     description = None
+                     displayName = "Anonymous IP"
+                     sourceObject = "Lead"
+                     dataType = "string"
+                     size = 255
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = True
+                     dynamicFieldRef = "leadAttributeList"
+                     updatedAt = 2011-07-18 18:46:01
+                  },
+                  (MObjFieldMetadata){
+                     name = "BillingCity"
+                     description = None
+                     displayName = "Billing City"
+                     sourceObject = "Company"
+                     dataType = "string"
+                     size = 255
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = True
+                     dynamicFieldRef = "leadAttributeList"
+                     updatedAt = 2011-07-18 18:46:01
+                  },
+                  (MObjFieldMetadata){
+                     name = "BillingCountry"
+                     description = None
+                     displayName = "Billing Country"
+                     sourceObject = "Company"
+                     dataType = "string"
+                     size = 255
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = True
+                     dynamicFieldRef = "leadAttributeList"
+                     updatedAt = 2011-07-18 18:46:01
+                  },
+                  (MObjFieldMetadata){
+                     name = "BillingPostalCode"
+                     description = None
+                     displayName = "Billing Postal Code"
+                     sourceObject = "Company"
+                     dataType = "string"
+                     size = 255
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = True
+                     dynamicFieldRef = "leadAttributeList"
+                     updatedAt = 2011-07-18 18:46:01
+                  },
+                  (MObjFieldMetadata){
+                     name = "BillingState"
+                     description = None
+                     displayName = "Billing State"
+                     sourceObject = "Company"
+                     dataType = "string"
+                     size = 255
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = True
+                     dynamicFieldRef = "leadAttributeList"
+                     updatedAt = 2011-07-18 18:46:01
+                  },
+                  (MObjFieldMetadata){
+                     name = "BillingStreet"
+                     description = None
+                     displayName = "Billing Address"
+                     sourceObject = "Company"
+                     dataType = "text"
+                     size = 2000
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = True
+                     dynamicFieldRef = "leadAttributeList"
+                     updatedAt = 2011-07-18 18:46:01
+                  },
+                  (MObjFieldMetadata){
+                     name = "City"
+                     description = None
+                     displayName = "City"
+                     sourceObject = "Lead"
+                     dataType = "string"
+                     size = 255
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = True
+                     dynamicFieldRef = "leadAttributeList"
+                     updatedAt = 2011-07-18 18:46:01
+                  },
+                  (MObjFieldMetadata){
+                     name = "Company"
+                     description = None
+                     displayName = "Company Name"
+                     sourceObject = "Company"
+                     dataType = "string"
+                     size = 255
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = True
+                     dynamicFieldRef = "leadAttributeList"
+                     updatedAt = 2011-07-18 18:46:01
+                  },
+                  (MObjFieldMetadata){
+                     name = "Country"
+                     description = None
+                     displayName = "Country"
+                     sourceObject = "Lead"
+                     dataType = "string"
+                     size = 255
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = True
+                     dynamicFieldRef = "leadAttributeList"
+                     updatedAt = 2011-07-18 18:46:01
+                  },
+                  (MObjFieldMetadata){
+                     name = "DateofBirth"
+                     description = None
+                     displayName = "Date of Birth"
+                     sourceObject = "Lead"
+                     dataType = "date"
+                     size = None
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = True
+                     dynamicFieldRef = "leadAttributeList"
+                     updatedAt = 2011-07-18 18:46:01
+                  },
+                  (MObjFieldMetadata){
+                     name = "Department"
+                     description = None
+                     displayName = "Department"
+                     sourceObject = "Lead"
+                     dataType = "string"
+                     size = 255
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = True
+                     dynamicFieldRef = "leadAttributeList"
+                     updatedAt = 2011-07-18 18:46:03
+                  },
+                  (MObjFieldMetadata){
+                     name = "DoNotCall"
+                     description = None
+                     displayName = "Do Not Call"
+                     sourceObject = "Lead"
+                     dataType = "boolean"
+                     size = None
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = True
+                     dynamicFieldRef = "leadAttributeList"
+                     updatedAt = 2011-07-18 18:46:01
+                  },
+                  (MObjFieldMetadata){
+                     name = "DoNotCallReason"
+                     description = None
+                     displayName = "Do Not Call Reason"
+                     sourceObject = "Lead"
+                     dataType = "string"
+                     size = 2000
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = True
+                     dynamicFieldRef = "leadAttributeList"
+                     updatedAt = 2011-07-18 18:46:01
+                  },
+                  (MObjFieldMetadata){
+                     name = "Email"
+                     description = None
+                     displayName = "Email Address"
+                     sourceObject = "Lead"
+                     dataType = "email"
+                     size = 255
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = True
+                     dynamicFieldRef = "leadAttributeList"
+                     updatedAt = 2011-07-18 18:46:01
+                  },
+                  (MObjFieldMetadata){
+                     name = "Fax"
+                     description = None
+                     displayName = "Fax Number"
+                     sourceObject = "Lead"
+                     dataType = "phone"
+                     size = 255
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = True
+                     dynamicFieldRef = "leadAttributeList"
+                     updatedAt = 2011-07-18 18:46:01
+                  },
+                  (MObjFieldMetadata){
+                     name = "FirstName"
+                     description = None
+                     displayName = "First Name"
+                     sourceObject = "Lead"
+                     dataType = "string"
+                     size = 255
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = True
+                     dynamicFieldRef = "leadAttributeList"
+                     updatedAt = 2011-07-18 18:46:01
+                  },
+                  (MObjFieldMetadata){
+                     name = "Industry"
+                     description = None
+                     displayName = "Industry"
+                     sourceObject = "Company"
+                     dataType = "string"
+                     size = 255
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = True
+                     dynamicFieldRef = "leadAttributeList"
+                     updatedAt = 2011-07-18 18:46:01
+                  },
+                  (MObjFieldMetadata){
+                     name = "InferredCompany"
+                     description = None
+                     displayName = "Inferred Company"
+                     sourceObject = "Lead"
+                     dataType = "string"
+                     size = 255
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = True
+                     dynamicFieldRef = "leadAttributeList"
+                     updatedAt = 2011-07-18 18:46:01
+                  },
+                  (MObjFieldMetadata){
+                     name = "InferredCountry"
+                     description = None
+                     displayName = "Inferred Country"
+                     sourceObject = "Lead"
+                     dataType = "string"
+                     size = 255
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = True
+                     dynamicFieldRef = "leadAttributeList"
+                     updatedAt = 2011-07-18 18:46:01
+                  },
+                  (MObjFieldMetadata){
+                     name = "LastName"
+                     description = None
+                     displayName = "Last Name"
+                     sourceObject = "Lead"
+                     dataType = "string"
+                     size = 255
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = True
+                     dynamicFieldRef = "leadAttributeList"
+                     updatedAt = 2011-07-18 18:46:01
+                  },
+                  (MObjFieldMetadata){
+                     name = "LeadRole"
+                     description = None
+                     displayName = "Role"
+                     sourceObject = "LeadInterest"
+                     dataType = "string"
+                     size = 50
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = True
+                     dynamicFieldRef = "leadAttributeList"
+                     updatedAt = 2011-07-18 18:46:01
+                  },
+                  (MObjFieldMetadata){
+                     name = "LeadScore"
+                     description = None
+                     displayName = "Lead Score"
+                     sourceObject = "LeadInterest"
+                     dataType = "integer"
+                     size = None
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = True
+                     dynamicFieldRef = "leadAttributeList"
+                     updatedAt = 2011-07-18 18:46:01
+                  },
+                  (MObjFieldMetadata){
+                     name = "LeadSource"
+                     description = None
+                     displayName = "Lead Source"
+                     sourceObject = "LeadInterest"
+                     dataType = "string"
+                     size = 255
+                     isReadonly = False
+                     isUpdateBlocked = True
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = True
+                     dynamicFieldRef = "leadAttributeList"
+                     updatedAt = 2011-09-06 13:16:19
+                  },
+                  (MObjFieldMetadata){
+                     name = "LeadStatus"
+                     description = None
+                     displayName = "Lead Status"
+                     sourceObject = "LeadInterest"
+                     dataType = "string"
+                     size = 255
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = True
+                     dynamicFieldRef = "leadAttributeList"
+                     updatedAt = 2011-07-18 18:46:01
+                  },
+                  (MObjFieldMetadata){
+                     name = "MainPhone"
+                     description = None
+                     displayName = "Main Phone"
+                     sourceObject = "Company"
+                     dataType = "string"
+                     size = 255
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = True
+                     dynamicFieldRef = "leadAttributeList"
+                     updatedAt = 2011-07-18 18:46:01
+                  },
+                  (MObjFieldMetadata){
+                     name = "Marketo Jigsaw Company Id"
+                     description = None
+                     displayName = "Marketo Data.com Id"
+                     sourceObject = "Company"
+                     dataType = "string"
+                     size = 50
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = True
+                     dynamicFieldRef = "leadAttributeList"
+                     updatedAt = 2011-09-23 21:09:08
+                  },
+                  (MObjFieldMetadata){
+                     name = "Marketo Jigsaw Company Status"
+                     description = None
+                     displayName = "Marketo Data.com Status"
+                     sourceObject = "Company"
+                     dataType = "string"
+                     size = 50
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = True
+                     dynamicFieldRef = "leadAttributeList"
+                     updatedAt = 2011-09-23 21:09:08
+                  },
+                  (MObjFieldMetadata){
+                     name = "Marketo Jigsaw Contact Id"
+                     description = None
+                     displayName = "Marketo Data.com Id"
+                     sourceObject = "Lead"
+                     dataType = "string"
+                     size = 50
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = True
+                     dynamicFieldRef = "leadAttributeList"
+                     updatedAt = 2011-09-23 21:09:08
+                  },
+                  (MObjFieldMetadata){
+                     name = "Marketo Jigsaw Contact Status"
+                     description = None
+                     displayName = "Marketo Data.com Status"
+                     sourceObject = "Lead"
+                     dataType = "string"
+                     size = 50
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = True
+                     dynamicFieldRef = "leadAttributeList"
+                     updatedAt = 2011-09-23 21:09:08
+                  },
+                  (MObjFieldMetadata){
+                     name = "MiddleName"
+                     description = None
+                     displayName = "Middle Name"
+                     sourceObject = "Lead"
+                     dataType = "string"
+                     size = 255
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = True
+                     dynamicFieldRef = "leadAttributeList"
+                     updatedAt = 2011-07-18 18:46:01
+                  },
+                  (MObjFieldMetadata){
+                     name = "MobilePhone"
+                     description = None
+                     displayName = "Mobile Phone Number"
+                     sourceObject = "Lead"
+                     dataType = "phone"
+                     size = 255
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = True
+                     dynamicFieldRef = "leadAttributeList"
+                     updatedAt = 2011-07-18 18:46:01
+                  },
+                  (MObjFieldMetadata){
+                     name = "NumberOfEmployees"
+                     description = None
+                     displayName = "Num Employees"
+                     sourceObject = "Company"
+                     dataType = "integer"
+                     size = None
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = True
+                     dynamicFieldRef = "leadAttributeList"
+                     updatedAt = 2011-07-18 18:46:01
+                  },
+                  (MObjFieldMetadata){
+                     name = "Phone"
+                     description = None
+                     displayName = "Phone Number"
+                     sourceObject = "Lead"
+                     dataType = "phone"
+                     size = 255
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = True
+                     dynamicFieldRef = "leadAttributeList"
+                     updatedAt = 2011-07-18 18:46:01
+                  },
+                  (MObjFieldMetadata){
+                     name = "Postal Code"
+                     description = None
+                     displayName = "Postal Code"
+                     sourceObject = "Lead"
+                     dataType = "string"
+                     size = 255
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = True
+                     dynamicFieldRef = "leadAttributeList"
+                     updatedAt = 2011-07-18 18:46:01
+                  },
+                  (MObjFieldMetadata){
+                     name = "Rating"
+                     description = None
+                     displayName = "Lead Rating"
+                     sourceObject = "LeadInterest"
+                     dataType = "string"
+                     size = 255
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = True
+                     dynamicFieldRef = "leadAttributeList"
+                     updatedAt = 2011-07-18 18:46:01
+                  },
+                  (MObjFieldMetadata){
+                     name = "Salutation"
+                     description = None
+                     displayName = "Salutation"
+                     sourceObject = "Lead"
+                     dataType = "string"
+                     size = 255
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = True
+                     dynamicFieldRef = "leadAttributeList"
+                     updatedAt = 2011-07-18 18:46:01
+                  },
+                  (MObjFieldMetadata){
+                     name = "SICCode"
+                     description = None
+                     displayName = "SIC Code"
+                     sourceObject = "Company"
+                     dataType = "string"
+                     size = 40
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = True
+                     dynamicFieldRef = "leadAttributeList"
+                     updatedAt = 2011-07-18 18:46:01
+                  },
+                  (MObjFieldMetadata){
+                     name = "Site"
+                     description = None
+                     displayName = "Site"
+                     sourceObject = "Company"
+                     dataType = "string"
+                     size = 255
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = True
+                     dynamicFieldRef = "leadAttributeList"
+                     updatedAt = 2011-07-18 18:46:01
+                  },
+                  (MObjFieldMetadata){
+                     name = "State"
+                     description = None
+                     displayName = "State"
+                     sourceObject = "Lead"
+                     dataType = "string"
+                     size = 255
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = True
+                     dynamicFieldRef = "leadAttributeList"
+                     updatedAt = 2011-07-18 18:46:01
+                  },
+                  (MObjFieldMetadata){
+                     name = "Title"
+                     description = None
+                     displayName = "Job Title"
+                     sourceObject = "Lead"
+                     dataType = "string"
+                     size = 255
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = True
+                     dynamicFieldRef = "leadAttributeList"
+                     updatedAt = 2011-07-18 18:46:01
+                  },
+                  (MObjFieldMetadata){
+                     name = "Unsubscribed"
+                     description = None
+                     displayName = "Unsubscribed"
+                     sourceObject = "Lead"
+                     dataType = "boolean"
+                     size = None
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = True
+                     dynamicFieldRef = "leadAttributeList"
+                     updatedAt = 2011-07-18 18:46:01
+                  },
+                  (MObjFieldMetadata){
+                     name = "UnsubscribedReason"
+                     description = None
+                     displayName = "Unsubscribed Reason"
+                     sourceObject = "Lead"
+                     dataType = "string"
+                     size = 2000
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = True
+                     dynamicFieldRef = "leadAttributeList"
+                     updatedAt = 2011-07-18 18:46:01
+                  },
+                  (MObjFieldMetadata){
+                     name = "WebReplyBehavioralScore"
+                     description = None
+                     displayName = "WebReply Behavioral Score"
+                     sourceObject = "LeadInterest"
+                     dataType = "integer"
+                     size = 0
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = True
+                     isDynamic = True
+                     dynamicFieldRef = "leadAttributeList"
+                     updatedAt = 2011-09-23 21:07:43
+                  },
+                  (MObjFieldMetadata){
+                     name = "WebReplyContactID"
+                     description = None
+                     displayName = "WebReply ContactID"
+                     sourceObject = "Lead"
+                     dataType = "string"
+                     size = 2000
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = True
+                     isDynamic = True
+                     dynamicFieldRef = "leadAttributeList"
+                     updatedAt = 2011-09-06 13:56:08
+                  },
+                  (MObjFieldMetadata){
+                     name = "WebReplyDemographicScore"
+                     description = None
+                     displayName = "WebReply Demographic Score"
+                     sourceObject = "LeadInterest"
+                     dataType = "integer"
+                     size = 0
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = True
+                     isDynamic = True
+                     dynamicFieldRef = "leadAttributeList"
+                     updatedAt = 2011-09-23 21:07:43
+                  },
+                  (MObjFieldMetadata){
+                     name = "WebReplyJobCode"
+                     description = None
+                     displayName = "WebReply Job Code"
+                     sourceObject = "Lead"
+                     dataType = "string"
+                     size = 2000
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = True
+                     isDynamic = True
+                     dynamicFieldRef = "leadAttributeList"
+                     updatedAt = 2011-09-15 12:43:32
+                  },
+                  (MObjFieldMetadata){
+                     name = "WebReplyURL"
+                     description = None
+                     displayName = "WebReply URL"
+                     sourceObject = "Lead"
+                     dataType = "string"
+                     size = 2000
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = True
+                     isDynamic = True
+                     dynamicFieldRef = "leadAttributeList"
+                     updatedAt = 2011-09-15 08:51:38
+                  },
+                  (MObjFieldMetadata){
+                     name = "Website"
+                     description = None
+                     displayName = "Website"
+                     sourceObject = "Company"
+                     dataType = "url"
+                     size = 255
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = True
+                     dynamicFieldRef = "leadAttributeList"
+                     updatedAt = 2011-07-18 18:46:01
+                  },
+            }
+         updatedAt = 2011-09-23 21:09:08
+      }
+ }
+(ResultDescribeMObject){
+   metadata = 
+      (MObjectMetadata){
+         name = "Opportunity"
+         description = "Marketo Opportunity"
+         isCustom = False
+         isVirtual = False
+         fieldList = 
+            (ArrayOfMObjFieldMetadata){
+               field[] = 
+                  (MObjFieldMetadata){
+                     name = "Amount"
+                     description = None
+                     displayName = "Amount"
+                     sourceObject = "Opportunity"
+                     dataType = "currency"
+                     size = None
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = False
+                     dynamicFieldRef = None
+                     updatedAt = 2011-09-23 21:07:58
+                  },
+                  (MObjFieldMetadata){
+                     name = "CloseDate"
+                     description = None
+                     displayName = "Close Date"
+                     sourceObject = "Opportunity"
+                     dataType = "date"
+                     size = None
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = False
+                     dynamicFieldRef = None
+                     updatedAt = 2011-09-23 21:08:02
+                  },
+                  (MObjFieldMetadata){
+                     name = "CompanyId"
+                     description = None
+                     displayName = "Account"
+                     sourceObject = "Opportunity"
+                     dataType = "reference"
+                     size = None
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = False
+                     dynamicFieldRef = None
+                     updatedAt = 2011-09-23 21:07:55
+                  },
+                  (MObjFieldMetadata){
+                     name = "Description"
+                     description = None
+                     displayName = "Description"
+                     sourceObject = "Opportunity"
+                     dataType = "string"
+                     size = 2000
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = False
+                     dynamicFieldRef = None
+                     updatedAt = 2011-09-23 21:08:06
+                  },
+                  (MObjFieldMetadata){
+                     name = "ExpectedRevenue"
+                     description = None
+                     displayName = "Expected Revenue"
+                     sourceObject = "Opportunity"
+                     dataType = "currency"
+                     size = None
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = False
+                     dynamicFieldRef = None
+                     updatedAt = 2011-09-23 21:08:06
+                  },
+                  (MObjFieldMetadata){
+                     name = "ExternalCreatedDate"
+                     description = None
+                     displayName = "SFDC Created Date"
+                     sourceObject = "Opportunity"
+                     dataType = "datetime"
+                     size = None
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = False
+                     dynamicFieldRef = None
+                     updatedAt = 2011-09-23 21:08:21
+                  },
+                  (MObjFieldMetadata){
+                     name = "Fiscal"
+                     description = None
+                     displayName = "Fiscal"
+                     sourceObject = "Opportunity"
+                     dataType = "string"
+                     size = 255
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = False
+                     dynamicFieldRef = None
+                     updatedAt = 2011-09-23 21:08:06
+                  },
+                  (MObjFieldMetadata){
+                     name = "FiscalQuarter"
+                     description = None
+                     displayName = "Fiscal Quarter"
+                     sourceObject = "Opportunity"
+                     dataType = "integer"
+                     size = None
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = False
+                     dynamicFieldRef = None
+                     updatedAt = 2011-09-23 21:08:06
+                  },
+                  (MObjFieldMetadata){
+                     name = "FiscalYear"
+                     description = None
+                     displayName = "Fiscal Year"
+                     sourceObject = "Opportunity"
+                     dataType = "integer"
+                     size = None
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = False
+                     dynamicFieldRef = None
+                     updatedAt = 2011-09-23 21:08:06
+                  },
+                  (MObjFieldMetadata){
+                     name = "ForecastCategoryName"
+                     description = None
+                     displayName = "Forecast Category Name"
+                     sourceObject = "Opportunity"
+                     dataType = "string"
+                     size = 255
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = False
+                     dynamicFieldRef = None
+                     updatedAt = 2011-09-23 21:08:06
+                  },
+                  (MObjFieldMetadata){
+                     name = "Id"
+                     description = None
+                     displayName = "Id"
+                     sourceObject = "Opportunity"
+                     dataType = "integer"
+                     size = None
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = True
+                     dynamicFieldRef = "attributeList"
+                     updatedAt = 2011-09-23 21:07:55
+                  },
+                  (MObjFieldMetadata){
+                     name = "IsClosed"
+                     description = None
+                     displayName = "Is Closed"
+                     sourceObject = "Opportunity"
+                     dataType = "boolean"
+                     size = None
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = False
+                     dynamicFieldRef = None
+                     updatedAt = 2011-09-23 21:08:13
+                  },
+                  (MObjFieldMetadata){
+                     name = "IsWon"
+                     description = None
+                     displayName = "Is Won"
+                     sourceObject = "Opportunity"
+                     dataType = "boolean"
+                     size = None
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = False
+                     dynamicFieldRef = None
+                     updatedAt = 2011-09-23 21:08:13
+                  },
+                  (MObjFieldMetadata){
+                     name = "LastActivityDate"
+                     description = None
+                     displayName = "Last Activity Date"
+                     sourceObject = "Opportunity"
+                     dataType = "date"
+                     size = None
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = False
+                     dynamicFieldRef = None
+                     updatedAt = 2011-09-23 21:08:17
+                  },
+                  (MObjFieldMetadata){
+                     name = "LeadSource"
+                     description = None
+                     displayName = "Lead Source"
+                     sourceObject = "Opportunity"
+                     dataType = "string"
+                     size = 255
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = False
+                     dynamicFieldRef = None
+                     updatedAt = 2011-09-23 21:08:17
+                  },
+                  (MObjFieldMetadata){
+                     name = "Name"
+                     description = None
+                     displayName = "Name"
+                     sourceObject = "Opportunity"
+                     dataType = "string"
+                     size = 255
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = False
+                     dynamicFieldRef = None
+                     updatedAt = 2011-09-23 21:08:21
+                  },
+                  (MObjFieldMetadata){
+                     name = "NextStep"
+                     description = None
+                     displayName = "Next Step"
+                     sourceObject = "Opportunity"
+                     dataType = "string"
+                     size = 255
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = False
+                     dynamicFieldRef = None
+                     updatedAt = 2011-09-23 21:08:21
+                  },
+                  (MObjFieldMetadata){
+                     name = "Probability"
+                     description = None
+                     displayName = "Probability"
+                     sourceObject = "Opportunity"
+                     dataType = "integer"
+                     size = None
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = False
+                     dynamicFieldRef = None
+                     updatedAt = 2011-09-23 21:08:21
+                  },
+                  (MObjFieldMetadata){
+                     name = "Quantity"
+                     description = None
+                     displayName = "Quantity"
+                     sourceObject = "Opportunity"
+                     dataType = "float"
+                     size = None
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = False
+                     dynamicFieldRef = None
+                     updatedAt = 2011-09-23 21:08:21
+                  },
+                  (MObjFieldMetadata){
+                     name = "Stage"
+                     description = None
+                     displayName = "Stage"
+                     sourceObject = "Opportunity"
+                     dataType = "string"
+                     size = 255
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = False
+                     dynamicFieldRef = None
+                     updatedAt = 2011-09-23 21:08:21
+                  },
+                  (MObjFieldMetadata){
+                     name = "Type"
+                     description = None
+                     displayName = "Type"
+                     sourceObject = "Opportunity"
+                     dataType = "string"
+                     size = 255
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = False
+                     dynamicFieldRef = None
+                     updatedAt = 2011-09-23 21:08:21
+                  },
+            }
+         updatedAt = 2011-09-23 21:08:21
+      }
+ }
+(ResultDescribeMObject){
+   metadata = 
+      (MObjectMetadata){
+         name = "OpportunityPersonRole"
+         description = "Marketo Opportunity Person Role"
+         isCustom = False
+         isVirtual = False
+         fieldList = 
+            (ArrayOfMObjFieldMetadata){
+               field[] = 
+                  (MObjFieldMetadata){
+                     name = "ExternalCreatedDate"
+                     description = None
+                     displayName = "SFDC Created Date"
+                     sourceObject = "OpportunityPersonRole"
+                     dataType = "datetime"
+                     size = None
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = False
+                     dynamicFieldRef = None
+                     updatedAt = 2011-09-23 21:08:21
+                  },
+                  (MObjFieldMetadata){
+                     name = "Id"
+                     description = None
+                     displayName = "Id"
+                     sourceObject = "OpportunityPersonRole"
+                     dataType = "integer"
+                     size = None
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = True
+                     dynamicFieldRef = "attributeList"
+                     updatedAt = 2011-09-23 21:08:21
+                  },
+                  (MObjFieldMetadata){
+                     name = "IsPrimary"
+                     description = None
+                     displayName = "Is Primary"
+                     sourceObject = "OpportunityPersonRole"
+                     dataType = "boolean"
+                     size = None
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = False
+                     dynamicFieldRef = None
+                     updatedAt = 2011-09-23 21:08:21
+                  },
+                  (MObjFieldMetadata){
+                     name = "OpportunityId"
+                     description = None
+                     displayName = "Opportunity Id"
+                     sourceObject = "OpportunityPersonRole"
+                     dataType = "reference"
+                     size = None
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = False
+                     dynamicFieldRef = None
+                     updatedAt = 2011-09-23 21:08:21
+                  },
+                  (MObjFieldMetadata){
+                     name = "PersonId"
+                     description = None
+                     displayName = "Contact Id"
+                     sourceObject = "OpportunityPersonRole"
+                     dataType = "reference"
+                     size = None
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = False
+                     dynamicFieldRef = None
+                     updatedAt = 2011-09-23 21:08:21
+                  },
+                  (MObjFieldMetadata){
+                     name = "Role"
+                     description = None
+                     displayName = "Role"
+                     sourceObject = "OpportunityPersonRole"
+                     dataType = "string"
+                     size = 255
+                     isReadonly = False
+                     isUpdateBlocked = False
+                     isName = None
+                     isPrimaryKey = False
+                     isCustom = False
+                     isDynamic = False
+                     dynamicFieldRef = None
+                     updatedAt = 2011-09-23 21:08:21
+                  },
+            }
+         updatedAt = 2011-09-23 21:08:21
+      }
+ }

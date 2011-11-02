@@ -1,0 +1,6 @@
+{"server":"https://na-m.marketo.com/soap/mktows/1_7",
+ "daily_limit":10000,
+ "userid":"YOURUSERIDIDHERE",
+ "encryption_key":"YOURENCRYPTIONKEYHERE",
+ "wsdl":"marketo_wsdl_1_7.xml"
+}

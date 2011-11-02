@@ -1,0 +1,11 @@
+/doc/_build
+/build
+/dist
+/marketo.egg-info
+marketo.ini
+.project
+.pydevproject
+*.pyc
+*~
+#*
+

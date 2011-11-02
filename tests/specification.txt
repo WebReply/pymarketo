@@ -1,0 +1,140 @@
+Suds ( https://fedorahosted.org/suds/ )  version: 0.4 GA  build: R699-20100913
+
+Service ( MktMktowsApiService ) tns="http://www.marketo.com/mktows/"
+   Prefixes (1)
+      ns0 = "http://www.marketo.com/mktows/"
+   Ports (1):
+      (MktowsApiSoapPort)
+         Methods (18):
+            deleteCustomObjects(xs:string objTypeName, ArrayOfKeyList customObjKeyLists, )
+            deleteMObjects(ArrayOfMObject mObjectList, )
+            describeMObject(xs:string objectName, )
+            getCampaignsForSource(ReqCampSourceType source, xs:string name, xs:boolean exactName, )
+            getCustomObjects(xs:string objTypeName, xs:string streamPosition, xs:int batchSize, ArrayOfAttribute customObjKeyList, ArrayOfString includeAttributes, )
+            getLead(LeadKey leadKey, )
+            getLeadActivity(LeadKey leadKey, ActivityTypeFilter activityFilter, StreamPosition startPosition, xs:int batchSize, )
+            getLeadChanges(StreamPosition startPosition, ActivityTypeFilter activityFilter, xs:int batchSize, )
+            getMObjects(xs:string type, xs:int id, Attrib externalKey, ArrayOfMObjCriteria mObjCriteriaList, ArrayOfMObjAssociation mObjAssociationList, xs:string streamPosition, )
+            getMultipleLeads(xs:dateTime lastUpdatedAt, xs:string streamPosition, xs:int batchSize, ArrayOfString includeAttributes, )
+            listMObjects()
+            listOperation(ListOperationType listOperation, ListKey listKey, ArrayOfLeadKey listMemberList, xs:boolean strict, )
+            mergeLeads(ArrayOfAttribute winningLeadKeyList, ArrayOfKeyList losingLeadKeyLists, )
+            requestCampaign(ReqCampSourceType source, xs:int campaignId, ArrayOfLeadKey leadList, )
+            syncCustomObjects(xs:string objTypeName, ArrayOfCustomObj customObjList, SyncOperationEnum operation, )
+            syncLead(LeadRecord leadRecord, xs:boolean returnLead, xs:string marketoCookie, )
+            syncMObjects(ArrayOfMObject mObjectList, SyncOperationEnum operation, )
+            syncMultipleLeads(ArrayOfLeadRecord leadRecordList, xs:boolean dedupEnabled, )
+         Types (113):
+            ActivityRecord
+            ActivityType
+            ActivityTypeFilter
+            ArrayOfActivityRecord
+            ArrayOfActivityType
+            ArrayOfAttrib
+            ArrayOfAttribute
+            ArrayOfBase64Binary
+            ArrayOfCampaignRecord
+            ArrayOfCustomObj
+            ArrayOfInteger
+            ArrayOfKeyList
+            ArrayOfLeadChangeRecord
+            ArrayOfLeadKey
+            ArrayOfLeadRecord
+            ArrayOfLeadStatus
+            ArrayOfMObjAssociation
+            ArrayOfMObjCriteria
+            ArrayOfMObjFieldMetadata
+            ArrayOfMObjStatus
+            ArrayOfMObject
+            ArrayOfString
+            ArrayOfSyncCustomObjStatus
+            ArrayOfSyncStatus
+            ArrayOfVersionedItem
+            Attrib
+            Attribute
+            AuthenticationHeaderInfo
+            CampaignRecord
+            ComparisonEnum
+            CustomObj
+            ForeignSysType
+            LeadActivityList
+            LeadChangeRecord
+            LeadKey
+            LeadKeyRef
+            LeadMergeStatusEnum
+            LeadRecord
+            LeadStatus
+            LeadSyncStatus
+            ListKey
+            ListKeyType
+            ListOperationType
+            MObjAssociation
+            MObjCriteria
+            MObjFieldMetadata
+            MObjStatus
+            MObjStatusEnum
+            MObject
+            MObjectMetadata
+            MObjectTypeEnum
+            MergeStatus
+            MktowsContextHeaderInfo
+            ParamsDeleteCustomObjects
+            ParamsDeleteMObjects
+            ParamsDescribeMObject
+            ParamsGetCampaignsForSource
+            ParamsGetCustomObjects
+            ParamsGetLead
+            ParamsGetLeadActivity
+            ParamsGetLeadChanges
+            ParamsGetMObjects
+            ParamsGetMultipleLeads
+            ParamsListMObjects
+            ParamsListOperation
+            ParamsMergeLeads
+            ParamsRequestCampaign
+            ParamsSyncCustomObjects
+            ParamsSyncLead
+            ParamsSyncMObjects
+            ParamsSyncMultipleLeads
+            ReqCampSourceType
+            ResultDeleteCustomObjects
+            ResultDeleteMObjects
+            ResultDescribeMObject
+            ResultGetCampaignsForSource
+            ResultGetCustomObjects
+            ResultGetLead
+            ResultGetLeadChanges
+            ResultGetMObjects
+            ResultGetMultipleLeads
+            ResultListMObjects
+            ResultListOperation
+            ResultMergeLeads
+            ResultRequestCampaign
+            ResultSyncCustomObjects
+            ResultSyncLead
+            ResultSyncMObjects
+            ResultSyncMultipleLeads
+            StreamPosition
+            SuccessDeleteCustomObjects
+            SuccessDeleteMObjects
+            SuccessDescribeMObject
+            SuccessGetCampaignsForSource
+            SuccessGetCustomObjects
+            SuccessGetLead
+            SuccessGetLeadActivity
+            SuccessGetLeadChanges
+            SuccessGetMObjects
+            SuccessGetMultipleLeads
+            SuccessListMObjects
+            SuccessListOperation
+            SuccessMergeLeads
+            SuccessRequestCampaign
+            SuccessSyncCustomObjects
+            SuccessSyncLead
+            SuccessSyncMObjects
+            SuccessSyncMultipleLeads
+            SyncCustomObjStatus
+            SyncOperationEnum
+            SyncStatus
+            SyncStatusEnum
+            VersionedItem
